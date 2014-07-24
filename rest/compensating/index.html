@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Compensating Transactions as a Service &ndash; Primer</title>
+    <meta http-equiv='Content-Type' content='text/html;charset=utf-8' />
+
+    <style type="text/css">
+      .box { 
+          border: thin solid #888888;
+          page-break-inside: avoid ;
+          background-color: #F8F8F8 ; padding:1em ;
+          margin-left:0 ; margin-right: 10ex; 
+          margin-top: 0.1ex ; margin-bottom: 0.1ex ;
+      }
+      .todo		{ font-size: 80% ; color: #444 ; }    
+    </style>
+
+    <script src='http://www.w3.org/Tools/respec/respec-w3c-common' class='remove'></script>
+    <!--script src='respec-w3c-common' class='remove'></script -->
+
+    <script class='remove'>
+      var respecConfig = {
+          // document info
+          specStatus:           "unofficial",
+          shortName:            "compenstating-transactions",
+	      editors: 
+          [
+              { name: "Nandana Mihindukulasooriya" 
+	            //, url: "http://jena.apache.org/",
+                , company: "Ontology Engineering Group,  Universidad Politécnica de Madrid"
+                //, companyURL: "http://jena.apache.org/"
+              } ,
+              { name: "Raúl García Castro"
+                , company: "Ontology Engineering Group,  Universidad Politécnica de Madrid" 
+              } ,
+              { name: "Nandana Mihindukulasooriya" 
+	            //, url: "http://jena.apache.org/",
+                , company: "Ontology Engineering Group,  Universidad Politécnica de Madrid"
+              }   
+          ],
+
+      overrideCopyright: 
+      "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-sa/4.0/88x31.png\" /></a><br /><span xmlns:dct=\"http://purl.org/dc/terms/\" href=\"http://purl.org/dc/dcmitype/Text\" property=\"dct:title\" rel=\"dct:type\">This document</span> by <span xmlns:cc=\"http://creativecommons.org/ns#\" property=\"cc:attributionName\">Nandana Mihindukulasooriya, Raúl García Castro, and Nandana Mihindukulasooriya</span> is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/4.0/\">Creative Commons Attribution-ShareAlike 4.0 International License</a>",
+
+          // publishDate:   "2013-06-20",
+          // previousMaturity: "WD",
+          // previousPublishDate:  "2009-03-15",
+          // previousURI : "http://dev.w3.org/2009/dap/ReSpec.js/documentation.html",
+          copyrightStart:       "2014",
+         edDraftURI:           "http://dev.w3.org/2009/dap/ReSpec.js/documentation.html",
+          // lcEnd:  "2010-08-06",
+          // extraCSS:             ["../css/respec.css"],
+          extraCSS:             ["http://dev.w3.org/2009/dap/ReSpec.js/css/respec.css"],
+
+          // WG
+          //wg:           "Apache Jena",
+          //wgURI:        "http://jena.apache.org/",
+          //wgPublicList: "",
+          //wgPatentURI:  "",
+      };
+    </script>
+  </head>
+  <body>
+
+    <section id='abstract'>
+      <p>
+        Compensating transactions as a service protocol defines a RESTful transaction 
+        model for compensating transactions using HTTP protocol semantics such as entity
+        tags, conditional requests, hypermedia controls, and media types.
+      </p>
+    </section>
+
+    <section>
+      <h2>Introduction</h2>
+      <p>
+        This documents describes the compensating transactions  as a service protocol 
+        and provides examples for the protocol interactions. 
+      </p>
+    </section>
+
+    <section class="appendix" id="notes">
+      <h2>Notes</h2>
+
+    </section>
+
+
+    <section class="appendix" id="media-type">
+      <h2>Internet Media Type</h2>
+    
+      <p>The Internet Media Type / MIME Type for Transaction resources is "application/vnd.transaction+turtle".</p>
+      <p>The Internet Media Type / MIME Type for service command resources is "application/vnd.service.action+turtle".</p>
+      <p>The character set RDF Patch is "UTF-8".</p>
+      
+    </section>
+
+
+  </body>
+</html>
+
+  
